@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Appointment System</title>
+	<link href="styles/project1.css" rel="stylesheet">
+</head>
+
+<body class="project1">
+	<header class="nav">
+		<a href="#">About</a> <!--- change to code once finished -->
+		<a href="#concept">Concept</a>
+		<a href="index.html">Home</a>
+	</header>
+
+  <header class="c-header">
+  	<div class="container" id="about">
+      <div class="col-md-7">
+    		<h2>Appointment System</h2>
+				<h3>Objective</h3>
+      </div>
+      <div class="col-md-7">      	
+		      <p class="c-para">The goal of this program to help students understand the differences between C and C++ programming, the advantages and disadvantages of using C++ programming, and experience how programmers continuously adapt and change their applications to make it more effient and function better. <!-- Put short description here --> </p>
+		      <h3>About this project</h3>
+      </div>
+      <div class="col-md-7">      	
+		      <p class="c-para">This appointment calendar program was created with my partner, <a class="link" href="https://www.linkedin.com/in/jiahua-guo-20a151133/" title="https://www.linkedin.com/in/jiahua-guo-20a151133/" target="_blank">Emma Guo</a>, where we continuously changed the program to adapt it's usages to better fit the client's needs. This program was part of a course assignment where we had to implement course taught concepts of objected-oriented C++ programming which is explained in more detail down below. Our program's reads in a file filled with data (.csv or .dot) and creates a calendar to put all the data into. By separating the calendar into days, days to appointments, and appointments to time through mulpiple classes, we were able to efficiently change our program accordingly. In the beginning, our program reads in a file and the user is able to search the appointments by the subject/type or date of appointment. As we edited our program, we added features to add and check total amount of appointments. The program should output the date, start time, end time, subject, and location of the appointment. The program continues to prompt the user until the user is finished.</p> <!-- Put short description here -->
+      </div>      
+	  </div>
+  </header>
+
+  <header class="t-header">
+  	<div class="t-container"  id="concept">
+  		<h2>C++ Implemented Concepts</h2>
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Class and Encapsulation</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">After completing the program in C programming, our goal was to implement object-oriented programming. The first thing our team did while switching to C++ programming was to change all our structs to classes. Objected-oriented programming had various levels of access attributes such as public, private, and protected. </p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Constructors, Destructors, and Overloading</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">Among the default constructor and destructor, we implemented the copy constructor and the overloaded assignment operator. The copy constructor is supposed to allocate new space so that we can add more appointments to our calendar. As we progressed in adapting our program to objected-oriented, we changed almost all our methods into overloaded assignment operators.</p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Inheritance</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">With our original class that contains all the appointments, we derived another class that allows multiple appointments of the same time and place to show up on one day. With the help of inheritance, we were able to reuse our code to maintain our program and further develop its functions.</p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Polymorphism</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">Following the base and derived classes, we needed virtual functions in order to call the functions with the same name and perhaps the same parameters. However, they should be implemented differently. This allowed us to avoid binding issues from calling functions of the same name and possibly same paramenters.</p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Data Structures</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">Although this isn't part of object-oriented programming, rather it's part of the basics of programming. Throughout the process of changing this program, my partner and I started with array, adding linked list and vectors. We used template linked lists and vectors to test the advantages and disadvantages of the different data structures.</p>
+  			</div>
+  		</div>
+  	</div>
+  </header>
+
+  <footer class="bot-footer">
+    <div class="container text-light">
+      <div class="col-md-6">&copy; 2018 Qin Hui Queena Weng</div>
+    </div>
+  </footer>
+
+</body>
+</html>
