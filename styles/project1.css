@@ -237,6 +237,10 @@ body {
 /* container design */
 .container {
 	width: 100%;
+	padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
 }
 
 .t-container {
@@ -249,14 +253,6 @@ body {
   padding-left: 130.5px;
   font-family: Arial, sans-serif;
 }
-
-/*
-.col-md-6, {
-	position: relative;
-  width: 100%;
-  min-height: 1px;
-}
-*/
 
 .col-md-7 {
 	width: 65%;
@@ -305,10 +301,49 @@ body {
 
 .s-left {
 	margin-top: -25px;
+	margin-left: 115px;
+}
+
+.s-left p {
+	color: white;
+	/*
+	background-color: black;
+	opacity: 0.6;
+	padding: 10px;
+	margin-right: 80px;
+	*/
+}
+
+.s-left h3 {
+	color: #B8E6EB;
+	font-size: 25px;
+	margin-left: -40px;
+}
+
+.s-left a {
+	color: white;
+}
+
+.s-left a:hover {
+	color: #D7BCF4;
 }
 
 .s-right {
 	margin-top: -25px;
+}
+
+.t-col1 {
+	width: 30%;
+	padding-left: 100px;
+}
+
+.t-col2 {
+	width: 55%;
+}
+
+.t-col3 {
+	width: 15%;
+	padding-right: 40px;
 }
 
 .row {
@@ -321,10 +356,18 @@ body {
 	clear: both;
 }
 
-.row3:after {
-	content: '';
-	display: table;
-	clear: both;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 80%;
+	margin-left: 125px;
+	margin-top: -25px;
+}
+
+th, td {
+	text-align: left;
+	padding: 0px;
+	color: white;
 }
 
 /*navigation bar*/
