@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Game of Life</title>
+	<link href="styles/project1.css" rel="stylesheet">
+</head>
+
+<body class="project3">
+	<header class="nav">
+		<a href="#pictures">Program</a> <!--- change to code once finished -->
+		<a href="#concept">Concept</a>
+		<a href="index.html">Home</a>
+	</header>
+
+  <header class="c3-header">
+  	<div class="c-container">
+      <div class="col-md-7">
+    		<h2>The Game of Life</h2>
+				<h3>Objective</h3>
+      </div>
+      <div class="col-md-7">      	
+		      <p class="c-para">
+		      This program helps test all the knowledge I gained from Python in terms of understanding concepts and applying my problem-solving skills. Although this program appears simple, it deals with a deep understanding and usage of Python's progamming, allowing me to test my skills after only a quarter of learning about programming. <!-- Put short description here --> </p>
+		      <h3>About this project</h3>
+      </div>
+      <div class="col-md-7">      	
+		      <p class="c-para">
+		      This simple mathematical program follows the rules of Conrad's Game of Life, giving us a complex behavior with some simple rules. Given the option to team up with someone, I decided to challenge myself to see how far my abilities went. This program was split into two parts. In order to get familiarized with the rules of the game of life, I started out by creating a program that printed the next generation of glider. Changing the list of 0's and 1's according to the rules of the Game of Life, the function would print out the next pattern of glider. 
+		      Afterwards, I adapted the program so that it would read in user input for different pattern text files, how many generations, and if the outputted generations need to be saved to a file. To change the design a bit, I changed 0's into dots and 1's into asterisks. Instead of printing the next generation by calling the function one by one, the program would print them out consecutively. </p> <!-- Put short description here -->
+      </div>      
+	  </div>
+  </header>
+
+  <header class="t3-header">
+  	<div class="t-container"  id="concept">
+  		<h2>Python Implemented Step by Step</h2>
+  		<div class="row">
+  			<div class="col-lg-1 left3">
+  				<p class="t-paraL">Step One</p>
+  			</div>
+  			<div class="col-lg-1 right3">
+  				<p class="t-paraR">After deciding on spliting the program into two parts, I first created a function called nextGen(glider) to get the next pattern based on the rules of Conway's Game of Life. In the beginning of the program, I declared a glider matrix with rows of 0's and 1's so that I could test that I would get the correct next pattern which is called the next generation. </p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left3">
+  				<p class="t-paraL">Step Two</p>
+  			</div>
+  			<div class="col-lg-1 right3">
+  				<p class="t-paraR">Within the function, I created a deep copy of the glider and put that into a new list so that I could change the new list without affecting the original glider. I followed the mathematical computations that make up the rules in order to get the next generation and return it at the end of the function. </p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left3">
+  				<p class="t-paraL">Step Three</p>
+  			</div>
+  			<div class="col-lg-1 right3">
+  				<p class="t-paraR">The next part connects the first part so that I could get the next generation of the glider without having to make my following function more complicated. This function is called life(), and it asks for user input on file name to retrieve data, how many generations to print, and if the user would like to keep the generations obtained into a file. Of course, there are error prompts so that the function doens't malfunction. </p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left3">
+  				<p class="t-paraL">Step Four</p>
+  			</div>
+  			<div class="col-lg-1 right3">
+  				<p class="t-paraR">With a matrix data file, I create a new matrix and strip the file of the data to put into the newly created matrix. I would have to loop and find the next generation of the matrix provided a total of the user's input number plus one because the first generation is zero, which is the original matrix. </p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left3">
+  				<p class="t-paraL">Step Five</p>
+  			</div>
+  			<div class="col-lg-1 right3">
+  				<p class="t-paraR">Each time I call nextGen(glider), I would set the most recent matrix as my parameter and leave it's results into the most recent matrix. This way the matrix will continue to stay most recent. After calling nextGen(glider), I would call my print function display(new_matrix) so that each generation is outputted. </p>
+  			</div>
+  		</div>
+  	</div>
+  </header>
+
+  <header class="t3-header">
+	  	<div class="t-container" id="pictures">
+	  	<h2>Snippets of Program</h2>
+	  	<div class="row">
+			<div class="col-lg-2 s-left">
+			  	<p>
+			  		>>> life() <br>
+			  		Enter input file name: data.txt <br>
+			  		No such file. Try again. <br>
+			  		Enter input file name: lifedata.txt <br>
+			  		How many generations would you like to print? four <br>
+			  		Not a valid number. <br>
+			  		How many new generations would you like to print? 4
+			  	</p>
+			  	<div class="mySlides fade">
+			  		<div class="n-text">1 / 5</div>
+			  		<img src="life1gen0.jpg" style="width: 25%">
+			  	</div>
+
+			  	<div class="mySlides fade">
+			  		<div class="n-text">2 / 5</div>
+			  		<img src="life1gen1.jpg" style="width: 25%">
+			  	</div>
+
+			  	<div class="mySlides fade">
+			  		<div class="n-text">3 / 5</div>
+			  		<img src="life1gen2.jpg" style="width: 25%">
+			  	</div>
+
+			  	<div class="mySlides fade">
+			  		<div class="n-text">4 / 5</div>
+			  		<img src="life1gen3.jpg" style="width: 25%">
+			  	</div>
+
+			  	<div class="mySlides fade">
+			  		<div class="n-text">5 / 5</div>
+			  		<img src="life1gen4.jpg" style="width: 25%">
+			  		<!--<div class="text">
+			  			Caption Text
+			  		</div>-->
+			  	</div>
+
+		  	  <div>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  </div>
+
+			  	<p>
+			  		Would you like to save the latest generation? ('y' to save): y <br>
+			  		Enter destination file name: lifedata.txt <br>
+			  		Do you want to overwrite that file? ('y' to save): n <br>
+			  		Enter destination file name: save.txt <br>
+			 			<br>
+			  		Saving data to save.txt <br>
+			 			<br>
+			  		End of program. <br>
+			  	</p>
+
+			  	<h3>Actual Code</h3>
+			  		<p>
+			  			For more information, head to my GitHub account to see the entire code: <br>
+			  			&emsp; <a href="https://github.com/qqweng/Game-of-Life" title="https://github.com/qqweng/Game-of-Life" target="_blank">https://github.com/qqweng/Game-of-Life</a>
+			  		</p>
+			  </div>
+
+			  <!--
+			  <div class="col-lg-2 s-right">
+		  		<!-<img src="life1genAll.jpg" style="width: 25%">->
+				  <div class="row">
+			  		<div class="col-lg-4">
+				  		<p class="para3">
+					  		lifedata.txt<br>
+					  		0000000<br>
+					  		0010000<br>
+					  		0001000<br>
+					 			0111000<br>
+					  		0000000<br>
+					 			0000000<br>
+					  	</p>
+					  </div>
+				  </div>
+
+		  		<div class="row">
+		  			<div class="col-lg-3">
+		  				<img src="life1gen0.jpg" style="width: 110%">
+		  			</div>
+		  			<div class="col-lg-3">
+		  				<img src="life1gen1.jpg" style="width: 110%">
+		  			</div>
+		  			<div class="col-lg-3">
+		  				<img src="life1gen2.jpg" style="width: 110%">
+		  			</div>
+		  		</div>
+
+		  		<div class="row">
+		  			<div class="col-lg-3">
+		  				<img src="life1gen3.jpg" style="width: 110%">
+		  			</div>
+		  			<div class="col-lg-3">
+		  				<img src="life1gen4.jpg" style="width: 110%">
+		  			</div>
+		  			<div class="col-lg-3">
+		  				<img src="life1gen5.jpg" style="width: 106%">
+		  			</div>
+		  		</div>
+		  	  </div>
+		  	  -->
+			</div> 
+	  </div>
+	</header>
+
+  <footer class="bot-footer">
+    <div class="container text-light">
+      <div class="col-md-6">&copy; 2019 Qin Hui Queena Weng</div>
+    </div>
+  </footer>
+  <script src="scripts/project3.js"></script>
+</body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Appointment System</title>
+	<link href="styles/project1.css" rel="stylesheet">
+</head>
+
+<body class="project1">
+	<header class="nav">
+		<a href="#program">Program</a> 
+		<a href="#concept">Concept</a>
+		<a href="index.html">Home</a>
+	</header>
+
+  <header class="c-header">
+  	<div class="container">
+      <div class="col-md-7">
+    		<h2>Appointment System</h2>
+				<h3>Objective</h3>
+      </div>
+      <div class="col-md-7">      	
+		      <p class="c-para">The goal of this program to help students understand the differences between C and C++ programming, the advantages and disadvantages of using C++ programming, and experience how programmers continuously adapt and change their applications to make it more effient and function better. <!-- Put short description here --> </p>
+		      <h3>About this project</h3>
+      </div>
+      <div class="col-md-7">      	
+		      <p class="c-para">This appointment calendar program was created with my partner, <a class="link" href="https://www.linkedin.com/in/jiahua-guo-20a151133/" title="https://www.linkedin.com/in/jiahua-guo-20a151133/" target="_blank">Emma Guo</a>, where we continuously changed the program to adapt it's usages to better fit the client's needs. This program was part of a course assignment where we had to implement course taught concepts of objected-oriented C++ programming which is explained in more detail down below. Our program's reads in a file filled with data (.csv or .dot) and creates a calendar to put all the data into. By separating the calendar into days, days to appointments, and appointments to time through mulpiple classes, we were able to efficiently change our program accordingly. In the beginning, our program reads in a file and the user is able to search the appointments by the subject/type or date of appointment. As we edited our program, we added features to add and check total amount of appointments. The program should output the date, start time, end time, subject, and location of the appointment. The program continues to prompt the user until the user is finished.</p> <!-- Put short description here -->
+      </div>      
+	  </div>
+  </header>
+
+  <header class="t-header">
+  	<div class="t-container"  id="concept">
+  		<h2>C++ Implemented Concepts</h2>
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Class and Encapsulation</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">After completing the program in C programming, our goal was to implement object-oriented programming. The first thing our team did while switching to C++ programming was to change all our structs to classes. Objected-oriented programming had various levels of access attributes such as public, private, and protected. </p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Constructors, Destructors, and Overloading</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">Among the default constructor and destructor, we implemented the copy constructor and the overloaded assignment operator. The copy constructor is supposed to allocate new space so that we can add more appointments to our calendar. As we progressed in adapting our program to objected-oriented, we changed almost all our methods into overloaded assignment operators.</p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Inheritance</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">With our original class that contains all the appointments, we derived another class that allows multiple appointments of the same time and place to show up on one day. With the help of inheritance, we were able to reuse our code to maintain our program and further develop its functions.</p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Polymorphism</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">Following the base and derived classes, we needed virtual functions in order to call the functions with the same name and perhaps the same parameters. However, they should be implemented differently. This allowed us to avoid binding issues from calling functions of the same name and possibly same paramenters.</p>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-lg-1 left">
+  				<p class="t-paraL">Data Structures</p>
+  			</div>
+  			<div class="col-lg-1 right">
+  				<p class="t-paraR">Although this isn't part of object-oriented programming, rather it's part of the basics of programming. Throughout the process of changing this program, my partner and I started with array, adding linked list and vectors. We used template linked lists and vectors to test the advantages and disadvantages of the different data structures.</p>
+  			</div>
+  		</div>
+  	</div>
+  </header>
+
+  <header class="t-header">
+    <div class="t-container"  id="program">
+      <h2>Snippets of Program</h2>
+
+      <div class="row">
+        <div class="col-lg-2 s-left">
+        <p>
+          $ calendar.out appts4.csv<br>
+          Calendar Menu <br>
+          0. Done <br>
+          1. Search for date. <br>
+          2. Search for subject. <br>
+          3. Add an appointment. <br>
+          4. Print appointment count. <br>
+        </p>
+
+        <p>
+          Your choice >> 1 <br>
+        </p>
+
+        <p>
+          Please enter the month, day, and year (mm/dd/yyyy) >> 8/15/2012 <br> 
+          Start &emsp;End   &emsp;Subject     &emsp; &emsp;Location      <br>
+          06:30 &ensp;06:50 &ensp;Surgery     &emsp;&emsp;194 Young       &emsp;&emsp;WTRSF &emsp;&emsp;(17)<br>
+          10:10 &ensp;12:50 &ensp;Psychiatry  &ensp;&ensp;6 Olson         &emsp; &emsp;&emsp;WF &emsp; &emsp;&emsp;&ensp;(10)<br>
+          14:35 &ensp;15:45 &ensp;Geology     &emsp; &ensp;234 Wellman    &ensp;&ensp;WTR &emsp; &emsp;&emsp;(16)<br>
+        </p>
+
+        <p>
+          Calendar Menu <br>
+          0. Done <br>
+          1. Search for date. <br>
+          2. Search for subject. <br>
+          3. Add an appointment. <br>
+          4. Print appointment count. <br>
+        </p>
+
+        <p>
+          Your choice >> 2 <br>
+          Please enter the subject >> Psychiatry <br>
+        </p>
+
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Subject</th>
+          <th>Location</th>
+        </tr>
+
+        <tr>
+          <td>Monday, May 17, 1993</td>
+          <td>12:35</td>
+          <td>15:05</td>
+          <td>Psychiatry</td>
+          <td>1001 Geidt</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, October 9, 1993</td>
+          <td>07:15</td>
+          <td>09:55</td>
+          <td>Psychiatry</td>
+          <td>106 Wellman</td>
+        </tr>
+
+        <tr>
+          <td>Friday, January 28, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, January 29, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Sunday, January 30, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Monday, January 31, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, February 4, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, February 5, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Sunday, February 6, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Monday, February 7, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, February 11, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, February 12, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Sunday, February 13, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Monday, February 14, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, February 18, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, February 19, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Sunday, February 20, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Monday, February 21, 1994</td>
+          <td>09:10</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+          <td>FSUM</td>
+          <td>(16)</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, July 1, 2000</td>
+          <td>11:20</td>
+          <td>11:35</td>
+          <td>Psychiatry</td>
+          <td>194 Young</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, March 8, 2003</td>
+          <td>10:30</td>
+          <td>11:55</td>
+          <td>Psychiatry</td>
+          <td>198 Young</td>
+        </tr>
+
+        <tr>
+          <td>Monday, March 10, 2003</td>
+          <td>14:00</td>
+          <td>15:05</td>
+          <td>Psychiatry</td>
+          <td>1100 Social Science</td>
+        </tr>
+
+        <tr>
+          <td>Tuesday, March 9, 2004</td>
+          <td>09:00</td>
+          <td>10:45</td>
+          <td>Psychiatry</td>
+          <td>1003 Geidt</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, June 5, 2004</td>
+          <td>16:00</td>
+          <td>16:20</td>
+          <td>Psychiatry</td>
+          <td>1100 Social Science</td>
+        </tr>
+
+        <tr>
+          <td>Thursday, March 24, 2005</td>
+          <td>14:40</td>
+          <td>15:50</td>
+          <td>Psychiatry</td>
+          <td>123 Sciences Lecture Hall</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, April 15, 2006</td>
+          <td>12:05</td>
+          <td>12:40</td>
+          <td>Psychiatry</td>
+          <td>234 Wellman</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, November 1, 2006</td>
+          <td>06:55</td>
+          <td>07:35</td>
+          <td>Psychiatry</td>
+          <td>6 Wellman</td>
+          <td>WFS</td>
+          <td>(7)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, November 3, 2006</td>
+          <td>06:55</td>
+          <td>07:35</td>
+          <td>Psychiatry</td>
+          <td>6 Wellman</td>
+          <td>WFS</td>
+          <td>(7)</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, November 4, 2006</td>
+          <td>06:55</td>
+          <td>07:35</td>
+          <td>Psychiatry</td>
+          <td>6 Wellman</td>
+          <td>WFS</td>
+          <td>(7)</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, November 8, 2006</td>
+          <td>06:55</td>
+          <td>07:35</td>
+          <td>Psychiatry</td>
+          <td>6 Wellman</td>
+          <td>WFS</td>
+          <td>(7)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, November 10, 2006</td>
+          <td>06:55</td>
+          <td>07:35</td>
+          <td>Psychiatry</td>
+          <td>6 Wellman</td>
+          <td>WFS</td>
+          <td>(7)</td>
+        </tr>
+
+        <tr>
+          <td>Saturday, November 11, 2006</td>
+          <td>06:55</td>
+          <td>07:35</td>
+          <td>Psychiatry</td>
+          <td>6 Wellman</td>
+          <td>WFS</td>
+          <td>(7)</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, November 15, 2006</td>
+          <td>06:55</td>
+          <td>07:35</td>
+          <td>Psychiatry</td>
+          <td>6 Wellman</td>
+          <td>WFS</td>
+<td>(7)</td>
+        </tr>
+
+        <tr>
+          <td>Monday, September 27, 2010</td>
+          <td>10:30</td>
+          <td>10:50</td>
+          <td>Psychiatry</td>
+          <td>66 Roessler</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, August 8, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, August 8, 2012</td>
+          <td>10:20</td>
+          <td>13:10</td>
+          <td>Psychiatry</td>
+          <td>234 Wellman</td>
+        </tr>
+
+        <tr>
+          <td>Friday, August 10, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, August 15, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, August 17, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, August 22, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, August 24, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, August 29, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, August 31, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday, September 5, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Friday, September 7, 2012</td>
+          <td>10:10</td>
+          <td>12:50</td>
+          <td>Psychiatry</td>
+          <td>6 Olson</td>
+          <td>WF</td>
+          <td>(10)</td>
+        </tr>
+
+        <tr>
+          <td>Sunday, January 12, 2014</td>
+          <td>08:25</td>
+          <td>08:40</td>
+          <td>Psychiatry</td>
+          <td>3 Kleiber</td>
+        </tr>
+
+        <tr>
+          <td>Tuesday, March 28, 2017</td>
+          <td>07:05</td>
+          <td>09:30</td>
+          <td>Psychiatry</td>
+          <td>2 Wellman</td>
+        </tr>
+      </table>
+
+      <div class="row">
+        <div class="col-lg-2 s-left">
+        <p>
+          <br>
+          Calendar Menu <br>
+          0. Done <br>
+          1. Search for date. <br>
+          2. Search for subject. <br>
+          3. Add an appointment. <br>
+          4. Print appointment count. <br>
+        </p>
+
+        <p>
+          Your choice >> 0 <br>
+          $ <br>
+          <br>
+        </p>
+
+        <h3>Actual Code</h3>
+            <p>
+              To be released later...
+              <!--
+              For more information, head to my GitHub account to see the entire code: <br>
+              &emsp; <a href="https://github.com/qqweng/Appointment-System" title="https://github.com/qqweng/Appointment-System" target="_blank">https://github.com/qqweng/Appointment-System</a>
+              -->
+            </p>
+
+    </div>
+  </header>
+
+  <footer class="bot-footer">
+    <div class="container text-light">
+      <div class="col-md-6">&copy; 2019 Qin Hui Queena Weng</div>
+    </div>
+  </footer>
+
+</body>
+</html>
