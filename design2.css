@@ -6,7 +6,7 @@ body, html {
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page */
 .front {
 	/* The image used */
-	background: url("pictures/me1.JPG");
+	background: url("/pictures/me1.JPG");
 
 	/* Full height */
 	height: 100%; 
