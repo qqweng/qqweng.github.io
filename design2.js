@@ -18,6 +18,8 @@ function myFunction() {
 	var moreText = document.getElementById("more");
 	var btnText1 = document.getElementById("link1");
 	var btnText2 = document.getElementById("link2");
+<<<<<<< HEAD
+=======
 
   
 	/*if (moreText.style.display === "none") { */
@@ -33,6 +35,32 @@ function myFunction() {
 	}
 }
 
+var story = [
+    "<b>Sports</b> <br> One of my favorite hobbies is keeping myself active and playing sports. I have tried and continued doing many sports during my spare time or for class to keep myself active and healthy. I have done tennis my entire high school year, volleyball and taekwondo during university courses in which I plan on continuing, and archery for club activities. Sports just has that passion and competitive feel to it that I can't get stay away from and learning more about.",
+    "<b>Cooking</b> <br> I grew up on the mindset that you never know what other people put into the dishes made in restaurants and that it always better to cook your own food. However, the ability to try new food and learning about how to incorporate it into my own cooking is something that I want to show and give my parents a chance to try.",
+    "<b>Traveling</b> <br> To travel and see new things is a experience that I feel is very important to life. I get to learn more about another's culture and experience something that I don't normally get a chance to explore and gain knowledge about.",
+    "<b>Studying</b> <br> I am currently a undergraduate, fourth year student at the University of California, majoring in Computer Science. In addition to school, I have a part-time job as a student computer technician, helping out our clients in various departments manage and diagnose problems to their systems.",
+    "<b>Stress Relieving</b> <br> Being myself, I get time to myself and be who I am. I can calmly think about problems that arise during work and school, trying to find a solution without causing too much stress on myself and asking friends and colleagues for help if I get stuck.",
+    "<b>Kpop</b> <br> Ever since I started listening to kpop music about 1 and a half years ago, I have been an avid fangirl of kpop groups. By being able to watch my favorite groups perform and appear on shows, its a real stress reliever to laugh and sing along with my favorite groups. Ever since I started, my favorite group is Seventeen. Unfortunately, I don't have any pictures of relation to Seventeen that I can show off, but BTS is my one of many other favorite groups.",
+    "<b>Disney</b> <br> A kid at heart is one thing that I feel fits me pretty well. Of course, I have my professional style where I act according to my profession. However, I am who I am and that's being happy. Some people say that kids don't have to worry about life and can live carefree. I don't need the carefree part, but I do need to be able to smile and go through any obstacle that heads my way. Even if I'm nervous and ready to break down, I want to keep a smile on my face."
+    ]
+>>>>>>> ef8ba502cc072f317c3758875d351cd6d0e49865
+
+  
+	/*if (moreText.style.display === "none") { */
+	if (getComputedStyle(moreText, null).display === "none") {
+	  moreText.style.display = "inline";
+	  btnText1.style.display = "none";
+	  btnText2.style.display = "inline";
+	  
+	} else {
+	  moreText.style.display = "none";
+	  btnText1.style.display = "inline"; 
+	  btnText2.style.display = "none";
+	}
+}
+
+<<<<<<< HEAD
 var titles = [
     "Game of Life",
     "Appointment System",
@@ -127,6 +155,8 @@ var story = [
 
 var init = 0;
 
+=======
+>>>>>>> ef8ba502cc072f317c3758875d351cd6d0e49865
 function shiftLeft() {
 const boxes = document.querySelectorAll(".box");
 const tmpNode = boxes[0];
@@ -191,4 +221,8 @@ init = 6;
 infoMe.innerHTML = story[init];
 }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ef8ba502cc072f317c3758875d351cd6d0e49865
