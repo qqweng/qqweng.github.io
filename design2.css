@@ -630,7 +630,7 @@ body, html {
 	color: white;
 }
 
-@media screen and (max-width: 1024px) { /* IPAD PRO */
+@media screen and (max-width: 1024px) and (min-height: 1200px) { /* IPAD PRO */
 	#navbar {
 		display: flex;
 		width: 100%;	
@@ -673,12 +673,6 @@ body, html {
 		height: 40%;
 		width: 100%;
 		background-color: #e9d9f7;
-	}
-	
-	#proName:after {
-		content: "";
-		display: table;
-		clear: both;
 	}
 
 	#halfL {
@@ -767,13 +761,32 @@ body, html {
 	}
 }
 
-@media screen and (max-width: 768px) { /* IPAD */
+@media screen and (max-width: 768px) and (min-height: 900px) { /* IPAD */
+	#navbar {
+		display: flex;
+		width: 100%;	
+		align-items: center;
+		justify-content: center;
+	}
+	  
 	#navbar a {
 		font-size: 25px;
 	}
+	  
+	#navbar a:hover {
+		background-color: transparent;
+		color: #f2f2f2;
+	}
 
 	#title h1 {
+		padding-top: 15%;
 		font-size: 3em;
+	}
+	
+	#title span {
+		color: white;
+		padding-top: 0;
+		font-size: 22px;
 	}
 
 	#title2 {
@@ -788,14 +801,24 @@ body, html {
 
 	#proName {
 		height: 35%;
+		width: 100%;
 	}
 
 	#halfL {
-		height: 80%;
+		height: 75%;
+		width: 100%;
+		float: none;
+	}
+
+	#halfL img {
+		width: 100%;
+		background-size: cover;
 	}
 
 	#halfR {
-		height: 20%;
+		height: 25%;
+		width: 100%;
+		float: none;
 	}
 
 	#halfR h1 {
@@ -806,6 +829,11 @@ body, html {
 
 	#halfR button {
 		font-size: 20px;
+	}
+
+	#halfR button:hover {
+		background-color: transparent;
+		color: #009688;
 	}
 
 	#bot1 {
@@ -831,6 +859,11 @@ body, html {
 		width: 90%;
 	}
 
+	#link1, #link2 {
+		font-size: 16px;
+		background-color: transparent;
+	}
+
 	#title3 {
 		height: 9%;
 		top: 1%;
@@ -838,6 +871,14 @@ body, html {
 
 	#title3 h1 {
 		font-size: 2.7em;
+	}
+
+	.container {
+		height: 40%;
+	}
+
+	.cards__container img {
+		height: 100%;
 	}
 
 	.box:nth-child(2) {
@@ -871,7 +912,12 @@ body, html {
 	}
 
 	#moveImg button {
-		font-size: 20px;
+		font-size: 22px;
+	}
+	
+	#moveImg button:hover {
+		background-color: transparent;
+		color: #009688;
 	}
 
 	#info2 {
@@ -879,28 +925,47 @@ body, html {
 	}
 
 	#info2 p {
-		font-size: 20px;
+		font-size: 22px;
 	}
 
 	#centerC p {
-		font-size: 20px;
+		font-size: 22px;
 	}
 }
 
 @media screen and (max-width: 425px) { /* IPHONE */
+	#navbar {
+		display: flex;
+		width: 100%;	
+		align-items: center;
+		justify-content: center;
+	}
+	  
+	#navbar a {
+		font-size: 20px;
+	}
+
+	#navbar a:hover {
+		background-color: transparent;
+		color: #f2f2f2;
+	}
+
 	#title h1 {
+		padding-top: 15%;
 		font-size: 2.5em;
 	}
 
 	#title span {
 		font-size: 18px;
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 1em;
+		padding-left: 1em;
+		top: 0;
 	}
 
 	#title2 h1 {
 		font-size: 2em;
 		padding: 10px;
+		margin-left: 0.5em;
 	}
 
 	.myProjects {
@@ -910,14 +975,23 @@ body, html {
 
 	#proName {
 		height: 300px;
+		width: 100%;
 	}
 
 	#halfL {
+		float: none;
 		height: 75%;
+		width: 100%;
+	}
+
+	#halfL img {
+		width: 100%;
 	}
 
 	#halfR {
 		height: 25%;
+		float: none;
+		width: 100%;
 	}
 
 	#halfR h1 {
@@ -930,8 +1004,18 @@ body, html {
 		font-size: 17px;
 	}
 
+	#halfR button:hover {
+		background-color: transparent;
+		color: #009688;
+	}
+
 	#bot1 {
 		bottom: -5%;
+	}
+
+	#link1, #link2 {
+		font-size: 16px;
+		background-color: transparent;
 	}
 
 	#moreInfo {
@@ -939,6 +1023,10 @@ body, html {
 		padding-right: 8mm;
 		width: auto;
 		margin-right: 0;
+	}
+
+	#moreInfo span {
+		font-size: 18px;
 	}
 
 	#floatR {
@@ -975,6 +1063,15 @@ body, html {
 		height: 70%;
 	}
 
+	#moveImg button {
+		font-size: 18px;
+	}
+	
+	#moveImg button:hover {
+		background-color: transparent;
+		color: #009688;
+	}
+
 	#info2 {
 		height: 40%;
 	}
@@ -982,6 +1079,7 @@ body, html {
 	#info2 p {
 		padding-right: 1em;
 		padding-left: 1em;
+		font-size: 18px;
 	}
 
 	.box:nth-child(2) {
@@ -998,5 +1096,9 @@ body, html {
 	
 	.box:nth-child(5) {
 		display: none;
+	}
+
+	#centerC p {
+		font-size: 18px;
 	}
 }
