@@ -198,12 +198,19 @@ body, html {
 
 #floatR {
 	float: right;
-	width: 40%;
+	width: 32%;
 }
 
 #floatR img {
 	margin-top: -10px;
 	width: 100%;
+}
+
+#floatR figure {
+	margin-block-end: 0;
+	margin-block-start: 0;
+	margin-inline-start: 20px;
+	margin-inline-end: 20px;
 }
 
 #link1, #link2 { 
