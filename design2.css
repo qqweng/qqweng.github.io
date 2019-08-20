@@ -933,7 +933,7 @@ body, html {
 	}
 }
 
-@media screen and (max-width: 425px) { /* IPHONE */
+@media screen and (max-width: 425px) and (max-height: 825px){ /* IPHONE */
 	#navbar {
 		display: flex;
 		width: 100%;	
@@ -1048,19 +1048,25 @@ body, html {
 	}
 
 	#title3 {
-		top: 0;
+		top: 3%;
 	}
 
 	#title3 h1 {
+		display: flex;
 		font-size: 2.1em;
+
 	}
 
 	.container {
-		height: 38%;
+		height: 40%;
 	}
 
 	.cards__container img {
 		height: 70%;
+	}
+
+	#moveImg {
+		height: 5%;
 	}
 
 	#moveImg button {
@@ -1100,5 +1106,84 @@ body, html {
 
 	#centerC p {
 		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 425px) and (max-height: 750px){ 
+	.container {
+		height: 42%;
+	}
+
+	.cards__container img {
+		height: 70%;
+	}
+
+	#info2 {
+		height: 36%;
+	}
+}
+
+@media screen and (max-width: 425px) and (max-height: 700px){ 
+	#title3 {
+		height: 7%;
+	}
+
+	.container {
+		height: 45%;
+	}
+
+	.cards__container img {
+		height: 70%;
+	}
+
+	#info2 {
+		height: 33%;
+	}
+
+	#info2 p{
+		font-size: 16px;
+	}
+
+	#centerC p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 350px) and (max-height: 600px){ 
+	#title3 {
+		height: 6%;
+		top: 4%;
+	}
+
+	#title3 h1 {
+		font-size: 1.5em;
+	}
+
+	.container {
+		height: 54%;
+	}
+
+	.cards__container img {
+		height: 60%;
+	}
+
+	#moveImg {
+		height: 4%;
+	}
+
+	#moveImg button {
+		font-size: 12px;
+	}
+
+	#info2 {
+		height: 28%;
+	}
+
+	#info2 p{
+		font-size: 12px;
+	}
+
+	#centerC p {
+		font-size: 12px;
 	}
 }
