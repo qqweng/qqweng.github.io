@@ -206,7 +206,7 @@ body, html {
 	width: 100%;
 }
 
-#link1, #link2 {  /* added */
+#link1, #link2 { 
 	display: inline;
 	border: none;
 	text-decoration: underline;
@@ -621,4 +621,375 @@ body, html {
 .fa-instagram {
 	background: #125688;
 	color: white;
+}
+
+@media screen and (max-width: 1024px) { /* IPAD PRO */
+	#navbar {
+		display: flex;
+		width: 100%;	
+		align-items: center;
+		justify-content: center;
+	}
+	  
+	#navbar a {
+		font-size: 30px;
+	}
+	  
+	#navbar a:hover {
+		background-color: transparent;
+		color: #f2f2f2;
+	}
+	
+	#title h1 {
+		padding-top: 15%;
+		font-size: 4em;
+	}
+	
+	#title span {
+		color: white;
+		padding-top: 0;
+		font-size: 22px;
+	}
+
+	#title2 {
+		display: flex;
+		height: 9%;
+	}
+	
+	#title2 h1 {
+		font-size: 3.5em;
+		margin: 0;
+		padding-left: 1em;
+	}
+
+	#proName {
+		height: 40%;
+		width: 100%;
+		background-color: #e9d9f7;
+	}
+	
+	#proName:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#halfL {
+		float: none;
+		width: 100%;
+		height: 75%;
+	}
+	
+	#halfL img {
+		width: 100%;
+		background-size: cover;
+	}
+
+	#halfR {
+		float: none;
+		width: 100%;
+		height: 25%;
+	}
+	
+	#halfR h1 {
+		font-size: 2.5em;
+		font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+	}
+
+	#halfR button {
+		font-size: 22px;
+	}
+	
+	#halfR button:hover {
+		background-color: transparent;
+		color: #009688;
+	}
+
+	#floatR {
+		float: right;
+		width: 50%;
+	}
+	
+	#floatR img {
+		margin-top: -10px;
+		width: 100%;
+	}
+
+	#moreInfo h3 {
+		font-size: 24px;
+		font-family: Apple Chancery, cursive;
+		margin-block-end: 0;
+	}
+
+	#moreInfo span {
+		font-size: 22px;
+	}
+
+	#link1, #link2 {
+		font-size: 16px;
+		background-color: transparent;
+	}
+	
+	#title3 h1 {
+		font-size: 3.5em;
+	}
+
+	.container {
+		height: 40%;
+	}
+
+	.cards__container img {
+		height: 100%;
+	}
+		
+	#moveImg button {
+		font-size: 22px;
+	}
+	
+	#moveImg button:hover {
+		background-color: transparent;
+		color: #009688;
+	}
+	
+	#info2 p {
+		font-size: 22px;
+	}
+
+	#centerC p {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 768px) { /* IPAD */
+	#navbar a {
+		font-size: 25px;
+	}
+
+	#title h1 {
+		font-size: 3em;
+	}
+
+	#title2 {
+		height: 7%;
+	}
+
+	#title2 h1 {
+		font-size: 2.5em;
+		margin: 0;
+		padding-left: 1em;
+	}
+
+	#proName {
+		height: 35%;
+	}
+
+	#halfL {
+		height: 80%;
+	}
+
+	#halfR {
+		height: 20%;
+	}
+
+	#halfR h1 {
+		font-size: 1.7em;
+		font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+		top: 35%;
+	}
+
+	#halfR button {
+		font-size: 20px;
+	}
+
+	#bot1 {
+		bottom: -10%;
+	}
+
+	#floatR {
+		float: right;
+		width: 50%;
+	}
+
+	#moreInfo h3 {
+		font-size: 21px;
+		font-family: Apple Chancery, cursive;
+		margin-block-end: 0;
+	}
+
+	#moreInfo span {
+		font-size: 20px;
+	}
+
+	#moreInfo {
+		width: 90%;
+	}
+
+	#title3 {
+		height: 9%;
+		top: 1%;
+	}
+
+	#title3 h1 {
+		font-size: 2.7em;
+	}
+
+	.box:nth-child(2) {
+		left: 10%;
+	}
+	
+	.box:nth-child(4) {
+		left: -10%;
+	}
+	
+	.box:nth-child(1) {
+		left: 20%;
+	}
+	
+	.box:nth-child(5) {
+		left: -20%;
+	}
+
+	.cards-wrapper {
+		width: 100%;
+		height: auto;
+	}
+
+	.cards__container {
+		width: 100%;
+		height: auto;
+	}
+
+	.cards__container img {
+		height: 75%;
+	}
+
+	#moveImg button {
+		font-size: 20px;
+	}
+
+	#info2 {
+		height: 38%;
+	}
+
+	#info2 p {
+		font-size: 20px;
+	}
+
+	#centerC p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 425px) { /* IPHONE */
+	#title h1 {
+		font-size: 2.5em;
+	}
+
+	#title span {
+		font-size: 18px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	#title2 h1 {
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	.myProjects {
+		height: auto;
+		width: 100%;
+	}
+
+	#proName {
+		height: 300px;
+	}
+
+	#halfL {
+		height: 75%;
+	}
+
+	#halfR {
+		height: 25%;
+	}
+
+	#halfR h1 {
+		font-size: 1.5em;
+		font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+		top: 35%;
+	}
+
+	#halfR button {
+		font-size: 17px;
+	}
+
+	#bot1 {
+		bottom: -5%;
+	}
+
+	#moreInfo {
+		padding-left: 8mm;
+		padding-right: 8mm;
+		width: auto;
+		margin-right: 0;
+	}
+
+	#floatR {
+		float: none;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	#floatR img {
+		margin-top: 0;
+	}
+
+	#gallery {
+		width: 100%;
+		margin-block-end: 0;
+		margin-block-start: 0;
+		margin-inline-end: 0;
+		margin-inline-start: 0;
+	}
+
+	#title3 {
+		top: 0;
+	}
+
+	#title3 h1 {
+		font-size: 2.1em;
+	}
+
+	.container {
+		height: 38%;
+	}
+
+	.cards__container img {
+		height: 70%;
+	}
+
+	#info2 {
+		height: 40%;
+	}
+
+	#info2 p {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	.box:nth-child(2) {
+		display: none;
+	}
+	
+	.box:nth-child(4) {
+		display: none;
+	}
+	
+	.box:nth-child(1) {
+		display: none;
+	}
+	
+	.box:nth-child(5) {
+		display: none;
+	}
 }
