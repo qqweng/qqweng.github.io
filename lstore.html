@@ -1,0 +1,199 @@
+<!doctype HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Queena Weng</title>
+
+	<!--Stylesheet-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="design3.css">
+	
+	<!--Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body>
+    <!--Navbar-->
+	<nav class="navbar fixed-top navbar-expand-sm bg-transparent navbar-dark">
+		<!--Logo-->
+		<a class="navbar-brand" href="index.html">
+			<img src="home_logo.png" style="width:40px; ">
+		</a>
+
+		<!--Collapse-->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!--Links-->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<!--Left Side-->
+			<ul class="navbar-nav mr-auto">
+			</ul>
+
+			<!--Right Side-->
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html#project">Projects</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+			</ul>
+		</div>
+    </nav>
+
+    <!--Banner-->
+	<div class="banner">
+        <h1>L-Store Implementation</h1>
+        <p>Lineage-based Data Store (L-Store) is a relational database that combines the real-time 
+            processing of transactional and analytical workloads in a lineage-based storage 
+            architecture. This allows for contention-free and lazy staging of columnar data from a 
+            write-optimized form into a read-optimized form that supports 
+            querying and retaining both current and historic data. For more information about L-Store: 
+            <a href="https://www.researchgate.net/publication/324150481_L-Store_A_Real-time_OLTP_and_OLAP_System">PDF</a> 
+            | <a href="https://expolab.org/papers/l-store-slides.pdf">Slides</a></p>
+    </div>
+    
+    <!--Table of Contents-->
+    <div style="background-color: #292929;">
+        <div class="table_of_contents">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#milestone1">Milestone 1: Single-threaded, In-memory L-Store</a></li>
+                <li><a href="#milestone2">Milestone 2: Single-threaded, In-memory & Durable L-Store</a></li>
+                <li><a href="#milestone3">Milestone 3: Multi-threaded, In-memory & Durable L-Store</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Contributors and Programming Language-->
+    <div class="table_of_contents" style="padding-bottom: 0;">
+        <h2>Contributors</h2>
+        <ul style="padding-bottom: 3%;">
+            <li><a target="_blank" href="https://github.com/TimothyV97">Tim Van</a></li>
+            <li><a target="_blank" href="https://github.com/eneakllomollari">Enea Kllomollari</a></li>
+            <li><a target="_blank" href="https://github.com/qqweng">Queena Weng</a></li>
+            <li><a target="_blank" href="https://github.com/micheleter">Michel Eter</a></li>
+            <li><a target="_blank" href="https://github.com/kennylee9672">Liyin Li</a></li>
+        </ul>
+        <h2>Programming Language: </h2>
+        <ul>
+            <li>Python</li>
+        </ul>
+    </div>
+    
+    <!--L-store Database-->
+    <div style="background-color: #292929;">
+        <div class="projects" style="margin-bottom: 0; padding-top: 2%;">
+
+            <!--Milestone 1-->
+            <div class="milestone" id="milestone1">
+                <h2>Milestone 1</h2>
+                <p>The 3 key stages for Milestone 1 are: </p>
+                <ol>
+                    <li>Data model</li>
+                    <li>Bufferpool Management</li>
+                    <li>Query Interface</li>
+                </ol>
+                <br>
+                <h3>Implementation</h3>
+                <p>The <em style="color: #c989e7;">Database</em> class is the general interface that handles: 
+                    starting and shutting down of the database instance.</p>
+                <br>
+                <p>The <em style="color: #c989e7;">Query</em> class provides standard SQL operations: insert, select, update, 
+                    delete, and sum. This class completes the query interface between the user and the table.</p>
+                <br>
+                <p>The <em style="color: #c989e7;">Table</em> class is the core of our database. We are able to view and manage records
+                    in the table. We used dictionary to hold the location of each record and it's 
+                    corresponding unique identifier (RID). We have incorporated the buffer management for this 
+                    milestone in the table class's page directory. </p>
+                <br>
+                <p>The <em style="color: #c989e7;">Record</em> class holds all of a records information, 
+                    which is stored in the <em>Table</em> class. Most of the data model is completed in this 
+                    class.</p>
+                <br>
+                <p>The <em style="color: #c989e7;">Page</em> class handles low-level physical storage. This class is currently 
+                    used by the <em>Record</em> class to store and retrieve pages, split into base pages and tail pages.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projects" style="margin-bottom: 0;">
+
+        <!--Milestone 2-->
+        <div class="milestone" id="milestone2" style="padding-bottom: 2%;">
+            <h2>Milestone 2</h2>
+            <p>The 3 key stages for Milestone 2 are: </p>
+            <ol>
+                <li>Durability &amp; Bufferpool Extension</li>
+                <li>Data Reorganization</li>
+                <li>Indexing</li>
+            </ol>
+            <br>
+            <h3>Implementation</h3>
+            <p>The <em style="color: #c989e7;">Database</em> class has a new additional change of 
+                providing a fixed constant number of pages the bufferpool will have.</p>
+            <br>
+            <p>The <em style="color: #c989e7;">Bufferpool</em> class will handle the replacement policy 
+                of the pages that exceed the pages the bufferpool is set to have. The pinning and storing
+                of old pages to disk is handled here using the Pickle library. This gives our 
+                database durability &amp; the bufferpool extension.</p>
+            <br>
+            <p>The <em style="color: #c989e7;">Table</em> class handles the data reorganization by
+                contention-free merging the tail records and updating the base record with the 
+                latest information by using a deque so that we can store the queue if table closes in 
+                the middle of merging</p>
+            <br>
+            <p>The <em style="color: #c989e7;">Index</em> class allows the table to process queries 
+                faster by indexing all the columns. We used a B-Tree to hold all the indexes.</p>
+        </div>
+    </div>
+
+
+    <div style="background-color: #292929;">
+        <div class="projects" style="margin-bottom: 0; padding-top: 2%;">
+
+            <!--Milestone 3-->
+            <div class="milestone" id="milestone3">
+                <h2>Milestone 3</h2>
+                <p>The 2 key stages for Milestone 3 are: </p>
+                <ol>
+                    <li>Transaction Semantics</li>
+                    <li>Concurrency Control</li>
+                </ol>
+                <br>
+                <h3>Implementation</h3>
+                <p>The <em style="color: #c989e7;">Lock Manager</em> class contains the locks for 
+                    all base records. This ensures that multiple transactions don't write to the same 
+                    record. A record has one X-lock for writing and multiple S-locks for reading.</p>
+                <br>
+                <p>The <em style="color: #c989e7;">Transaction</em> class handles the multithreading
+                    concurrency control of the multiple transaction workers. Only when all the transaction 
+                    workers finish does the table commit and save the changes. Otherwise, the changes are 
+                    aborted and fails to pass.</p>
+                <br>
+                <p>The <em style="color: #c989e7;">Transaction Worder</em> class does all the work as a 
+                    single thread that works with all the other existng transaction workers. All the transactions 
+                    that this worker has to do is also unpacked in this class.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer" id="contact">
+        <div class="row contact-info">
+            <div class="col-md-6 align-items-center">
+                <p>&copy; 2020 Queena Weng</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <a title="LinkedIn" href="https://www.linkedin.com/in/queena-weng-b46676171/" target="_blank" class="fa fa-linkedin" style="font-size: 18px"></a>	
+                <a title="Facebook" href="https://www.facebook.com/queena.weng" target="_blank" class="fa fa-facebook" style="font-size: 18px"></a>
+                <a title="Instagram" href="https://www.instagram.com/queena_weng/" target="_blank" class="fa fa-instagram" style="font-size: 18px"></a>
+                <a title="Email" href="mailto:qinhui.weng7479@gmail.com"><span class="fa fa-envelope" style="font-size: 16px"></span></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

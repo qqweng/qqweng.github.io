@@ -1,0 +1,667 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	background-color: black;
+}
+
+/* HOME/BANNER */
+.home {
+	/* The image used */
+	background-image: url("pictures/jackson-hendry.jpg");
+
+	/* Full height */
+	height: 100%; 
+  
+	/* Center and scale the image nicely */
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#title {
+	height: 30%;
+	width: 100%;
+	text-align: left;
+	padding-left: 12%;
+	padding-top: 6%;
+}
+
+#title h1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: white;
+	padding-top: 5%;
+	font-size: 3em;
+	margin-block-end: 0.33em;
+	margin-block-start: 0;
+}
+
+#title span {
+	color: white;
+	padding-top: 0;
+}
+
+.banner h1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: white;
+	padding-top: 10%;
+	font-size: 3em;
+	text-align: center;
+}
+
+.banner p {
+	width: 65%;
+	color: white;
+	padding-top: 1%;
+	padding-bottom: 5%;
+	margin: auto;
+	font-size: 16px;
+}
+
+
+/* ABOUT SECTION*/
+.content {
+	/* Full height */
+	height: 100%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 75%;
+}
+
+.content h1 {
+	color: aliceblue;
+	padding-bottom: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.info {
+	width: 80%;
+	height: 90%;
+	background-color: #4d4d4d;
+	border-radius: 5px;
+	border: 1px solid #4d4d4d;
+	margin: auto;
+}
+
+.info_buttons {
+	border-bottom: 1px solid black;
+}
+
+.button {
+	border: none;
+	border-radius: 50%;
+	color: white;
+	padding: 7px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 4px;
+	margin-top: 4px;
+	cursor: pointer;
+}
+
+.info_content {
+	font-size: 14px;
+	color: white;
+	padding: 5px;
+}
+
+.more_info {
+	margin-top: 20px;
+	margin-left: 10%;
+	width: auto;
+	font-size: 14px;
+}
+
+.more_info button {
+	background-color: #926fe2;
+	color: white;
+	border: none;
+	padding: 5px;
+}
+
+.more_info button:hover {
+	background-color: #3c1696;
+	color: white;
+	border: none;
+	padding: 5px;
+}
+
+.more_info a {
+	background-color: #926fe2;
+	color: white;
+	border: none;
+	padding: 5px;
+}
+
+.more_info a:hover {
+	background-color: #3c1696;
+	color: white;
+	border: none;
+	padding: 5px;
+}
+
+
+/* PROJECT SECTION */
+.projects {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	width: 75%;
+}
+
+.projects h1 {
+	color: aliceblue;
+	padding-bottom: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.card {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	border: none;
+}
+
+.card-body {
+	background-color: #555353;
+	color: white;
+}
+
+.card-title a {
+	color: white;
+}
+
+.list-group-item {
+	width: 100%;
+	background-color: #555353;
+	color: white;
+	border-color: aliceblue;
+}
+
+.milestone1::before {
+	content: 'Milestone 1';
+}
+
+.milestone1:hover::before {
+	content: 'Single-threaded, In-memory L-Store';
+}
+
+.milestone2::before {
+	content: 'Milestone 2';
+}
+
+.milestone2:hover::before {
+	content: 'Single-threaded, In-memory & Durable L-Store';
+}
+
+.milestone3::before {
+	content: 'Milestone 3';
+}
+
+.milestone3:hover::before {
+	content: 'Multi-threaded, In-memory & Durable L-Store';
+}
+
+.thread-library::before {
+	content: 'Thread Library';
+}
+
+.thread-library:hover::before {
+	content: 'User-level Thread Library (2 Milestones)';
+}
+
+.milestone {
+	padding-bottom: 5%;
+}
+
+.milestone h2 {
+	color: rgb(197, 21, 250);
+	font-family: "Times New Roman", Times, serif;
+	margin-bottom: 1rem;
+}
+
+.milestone h3 {
+	color: white;
+	font-size: x-large;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.milestone p {
+	color: white;
+	margin-bottom: 0;
+	padding-left: 5%;
+}
+
+.milestone li {
+	color: white;
+	margin-left: 5%;
+}
+
+
+/* TABLE OF CONTENTS + CONTRIBUTORS */
+.table_of_contents {
+	width: 75%;
+	margin: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.table_of_contents h2 {
+	color: white;
+}
+
+.table_of_contents li {
+	color: white;
+}
+
+
+/* FOOTER SECTION*/
+.footer {
+	height: 12%;
+}
+
+.contact-info {
+	width: 80%;
+	margin: auto;
+}
+
+.col-md-6 {
+	margin-top: 30px;
+}
+
+.col-md-6 p {
+	bottom: 0;
+	position: absolute;
+	color: white;
+}
+
+.col-md-6 a {
+	color: white;
+	font-size: 18px;
+}
+
+.col-md-6 h3 {
+	margin-bottom: 15px;
+	color: white;
+}
+
+.fa {
+	width: 30px;
+	border: none;
+	border-radius: 50%;
+	color: white;
+	padding: 7px;
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	margin: 5px 2px;
+	text-decoration: none;
+	
+}
+
+.fa:hover {
+	opacity: 0.6;
+	color: white;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.fa-envelope {
+	background: #373ae0;
+	color: white;
+}
+
+
+/* IMAGE CAROUSEL */
+.aboutme {
+	height: 100%;
+	width: 100%;
+}
+
+#title3 {
+	height: 12%;
+	display: block;
+	position: relative;
+}
+
+#title3 h1 {
+	padding-top: 3%;
+	text-align: center;
+}
+
+#picShow {
+	height: 50%;
+	width: 100%;
+}
+
+#allImgs {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-bottom: 0;
+}
+
+#moveImg {
+	height: 4%;
+	width: 100%;
+	text-align: center;
+}
+	
+#moveImg button {
+	display: inline-block;
+	text-align: center;
+	align-self: flex-end;
+	margin: 0;
+	background-color: white;
+	border: none;
+	font-size: 16px;
+	text-decoration: none;
+	color: #009688;
+}
+
+#moveImg button:hover {
+	background-color: aliceblue;
+	color: black;
+}
+
+#moveImg p {
+	display: inline-block;
+	align-self: flex-end;
+	margin: 0;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-size: 16px;
+	color: #009688;
+}
+
+.mySlides {
+	display: none;
+	height: 95%;
+	width: 50%;
+}
+
+#info2 {
+	display: flex;
+	height: 22%;
+	width: 100%;
+	background-color: #E1EDFF;
+	text-align: center;
+	align-items: center;
+}
+
+#info2 p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-right: 5em;
+	padding-left: 5em;
+}
+
+.container {
+	height: 50%;
+	width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards-wrapper {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 100%;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+}
+
+.cards__container img {
+    height: 80%;
+}
+
+.box {
+/*     margin: -1.5rem; */
+    width: 12rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* transition: 1s all; */
+}
+
+.box:nth-child(2n) {
+    transform: scale(0.85);
+    z-index: -1;
+}
+
+.box:nth-child(2) {
+  left: 5%;
+}
+
+.box:nth-child(4) {
+  left: -5%;
+}
+
+.box:nth-child(4n + 1) {
+    transform: scale(0.75);
+    z-index: -2;
+}
+
+.box:nth-child(1) {
+  left: 15%;
+}
+
+.box:nth-child(5) {
+  left: -15%;
+}
+
+.card__text-content {
+    text-align: center;
+    width: 75%;
+}
+
+.card__title {
+    padding: 1rem;
+}
+
+.box--hide {
+    display: none;
+}
+
+.move-out-from-left {
+    animation: moveOutLeft 0.5s ease-in-out;
+}
+
+.move-out-from-right {
+    animation: moveOutRight 0.5s ease-in-out;
+}
+
+.move-to-position5-from-left {
+    animation: moveToP5Left 0.5s ease-in-out;
+}
+
+.move-to-position4-from-left {
+    animation: moveToP4Left 0.5s ease-in-out;
+}
+
+.move-to-position3-from-left {
+    animation: moveToP3Left 0.5s ease-in-out;
+}
+
+.move-to-position2-from-left {
+    animation: moveToP2Left 0.5s ease-in-out;
+}
+
+
+.move-to-position1-from-left{
+    animation: moveToP1Left 0.5s ease-in-out;
+}
+
+.move-to-position5-from-right{
+    animation: moveToP5Right 0.5s ease-in-out;
+}
+.move-to-position4-from-right{
+    animation: moveToP4Right 0.5s ease-in-out;
+}
+.move-to-position3-from-right{
+    animation: moveToP3Right 0.5s ease-in-out;
+}
+.move-to-position2-from-right{
+    animation: moveToP2Right 0.5s ease-in-out;
+}
+.move-to-position1-from-right{
+    animation: moveToP1Right 0.5s ease-in-out;
+}
+
+.opac-half {
+    opacity: 0.75;
+}
+
+.opac-three-fourth {
+    opacity: 0.85;
+}
+
+@keyframes moveOutLeft {
+    0% {
+        transform: scale(0.75) translateX(0%);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5) translateX(-150%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.25) translateX(0%);
+        opacity: 0;
+    }
+}
+
+@keyframes moveOutRight {
+    0% {
+        transform: scale(0.75) translateX(0%);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5) translateX(150%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.25) translateX(0%);
+        opacity: 0;
+    }
+}
+
+
+@keyframes moveToP5Left {
+    from {
+        transform: scale(0.75) translateX(100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}
+
+@keyframes moveToP4Left {
+    from {
+        transform: scale(0.75) translateX(100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP3Left {
+    from {
+        transform: scale(0.85) translateX(100%);
+    }
+    to {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes moveToP2Left {
+    from {
+        transform: scale(1) translateX(100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP1Left {
+    from {
+        transform: scale(0.85) translateX(100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}
+
+
+@keyframes moveToP1Right {
+    from {
+        transform: scale(0.75) translateX(-100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}
+
+@keyframes moveToP2Right {
+    from {
+        transform: scale(0.75) translateX(-100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP3Right {
+    from {
+        transform: scale(0.85) translateX(-100%);
+    }
+    to {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes moveToP4Right {
+    from {
+        transform: scale(1) translateX(-100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP5Right {
+    from {
+        transform: scale(0.85) translateX(-100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}

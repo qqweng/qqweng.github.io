@@ -1,0 +1,428 @@
+
+body {
+	margin: 0;
+}
+
+/*background pic*/
+.project1 {
+	background: url("../images/project1-3.jpg") fixed;
+	background-size: cover;
+}
+
+.project2 {
+	background: url("../images/project1-5.jpg") fixed;
+	background-size: cover;
+}
+
+.project3 {
+	background: url("../images/project1-2.jpg") fixed;
+	background-size: cover;
+}
+
+/* header design*/
+.c-header, .c2-header, .c3-header {
+	margin-top: 30px;
+	color: rgba(255, 255, 255, 0.98);
+	height: 650px;
+	overflow: hidden;
+}
+
+.c-header h2 {
+	font-size: 35px;
+	font-weight: 550;
+	color: #B8E6EB;
+	margin-top: -10px;
+	margin-left: -170px;
+	font-family: Apple Chancery, cursive;
+}
+
+.c-header h3 {
+	font-size: 25px;
+	font-weight: 450;
+	margin-top: 45px;
+	text-align: center;
+}
+
+.c2-header h2 {
+	font-size: 35px;
+	font-weight: 550;
+	color: #B8E6EB;
+	margin-top: -10px;
+	margin-left: -170px;
+	font-family: Apple Chancery, cursive;
+}
+
+.c2-header h3 {
+	font-size: 25px;
+	font-weight: 450;
+	margin-top: 45px;
+	text-align: center;
+}
+
+.c3-header h2 {
+	font-size: 35px;
+	font-weight: 550;
+	color: #B8E6EB;
+	margin-top: -10px;
+	margin-left: -170px;
+	font-family: Apple Chancery, cursive;
+}
+
+.c3-header h3 {
+	font-size: 25px;
+	font-weight: 450;
+	margin-top: 45px;
+	text-align: center;
+}
+
+.c-para {
+	margin-top: -55px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.t-header, .t2-header, .t3-header, {
+	color: rgba(255, 255, 255, 0.98);
+	height: 650px;
+	overflow: hidden;
+	padding-top: 30px;
+}
+
+.s-header {
+	color: rgba(255, 255, 255, 0.98);
+	height: 660px;
+	overflow: hidden;
+}
+
+.s-header h2 {
+	font-size: 35px;
+	font-weight: 550;
+	color: #B8E6EB;
+	font-family: Apple Chancery, cursive;
+	margin-left: -75px;
+	margin-top: 25px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.t-header h2 {
+	font-size: 35px;
+	font-weight: 550;
+	color: #B8E6EB;
+	font-family: Apple Chancery, cursive;
+	padding-left: 45px;
+	margin-top: 25px;
+	padding-bottom: 10px;
+}
+
+.t2-header h2 {
+	font-size: 35px;
+	font-weight: 550;
+	color: #B8E6EB;
+	font-family: Apple Chancery, cursive;
+	padding-left: 45px;
+	margin-top: 25px;
+	padding-bottom: 10px;
+}
+
+.t3-header h2 {
+	font-size: 35px;
+	font-weight: 550;
+	color: #B8E6EB;
+	font-family: Apple Chancery, cursive;
+	padding-left: 45px;
+	margin-top: 25px;
+	padding-bottom: 10px;
+}
+
+.p3-header {
+	color: rgba(255, 255, 255, 0.98);
+	height: 650px;
+	overflow: hidden;
+	padding-top: 30px;
+}
+
+.temp {
+	font-size: 105px;
+	font-weight: 750;
+	color: #B8E6EB;
+	font-family: Apple Chancery, cursive;
+	text-align: center;
+	margin-top: -400px;
+}
+
+/*Slideshow design */
+.s-container {
+	max-width: 1000px;
+	margin: auto;
+	padding-top: 30px;
+
+}
+
+.para1 {
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+	padding: 10px;
+	margin-right: 80px;
+}
+
+.para2 {
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+	padding: 10px;
+	margin-right: 45px;
+}
+
+.para3 {
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.mySlides {
+	display: none;
+}
+
+.text {
+	color: white;
+	padding: 8px 12px;
+	bottom: 8px;
+	width: 100%;
+	text-align: left;
+}
+
+.n-text {
+	color: white;
+	padding: 8px 12px;
+	top: 0;
+	text-align: left;
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: gray;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active {
+	background-color: white;
+}
+
+/* fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: 0.4}
+	to {opacity: 1}
+}
+
+/* container design */
+.container {
+	width: 100%;
+	padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+
+.t-container {
+	padding-top: 30px;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+  padding-top: 27px;
+  padding-left: 130.5px;
+  font-family: Arial, sans-serif;
+}
+
+.col-md-7 {
+	width: 65%;
+	min-height: 1px;
+	padding-left: 225px;
+	padding-top: 35px;
+}
+
+.col-lg-1 {
+	float: left;
+	padding: 15px;
+	color: white;
+	margin-top: -30px;
+	margin-left: 26px;
+}
+
+.col-lg-2 {
+	float: right;
+	padding: 10px;
+	width: 45%
+}
+
+.col-lg-3 {
+	float: left;
+	padding: 10px;
+	width: 33%;
+}
+
+.col-lg-3 {
+	float: left;
+	padding: 10px;
+	width: 33%;
+}
+
+.left, .left2, .left3 {
+	width: 12%;
+	padding-right: 5px;
+	padding-left: 100px;
+}
+ 
+.right, .right2, .right3 {
+	width: 65%;
+	padding-left: 10px;
+	padding-right: 40px;
+}
+
+.s-left {
+	margin-top: -25px;
+	margin-left: 115px;
+}
+
+.s-left p {
+	color: white;
+	/*
+	background-color: black;
+	opacity: 0.6;
+	padding: 10px;
+	margin-right: 80px;
+	*/
+}
+
+.s-left h3 {
+	color: #B8E6EB;
+	font-size: 25px;
+	margin-left: -40px;
+}
+
+.s-left a {
+	color: white;
+}
+
+.s-left a:hover {
+	color: #D7BCF4;
+}
+
+.s-right {
+	margin-top: -25px;
+}
+
+.t-col1 {
+	width: 30%;
+	padding-left: 100px;
+}
+
+.t-col2 {
+	width: 55%;
+}
+
+.t-col3 {
+	width: 15%;
+	padding-right: 40px;
+}
+
+.row {
+	display: flex;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 80%;
+	margin-left: 125px;
+	margin-top: -25px;
+}
+
+th, td {
+	text-align: left;
+	padding: 0px;
+	color: white;
+}
+
+/*navigation bar*/
+.nav {
+	background-color: #343a40;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+}
+
+.nav a {
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+/*.nav a:hover {
+	color: #42167A;
+	background-color: white;
+}*/
+
+/*link design*/
+.link {
+	color: #CCA6F7;
+}
+
+.link:hover {
+	color: #C1F6D3;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-link:hover {
+	color: #DDD2FC;
+}
+
+/*footer design*/
+.bot-footer {
+	color: blue;
+	text-align: left;
+	background-color: #343a40;
+	height: 72px;
+}
+
+.tf-footer .tf-design a {
+  color: inherit;
+  border-bottom: 1px dashed;
+  background-color: #343a40;
+  padding-top: 1.5rem;
+  text-align: left
+  margin-top: 3rem !important
+}
