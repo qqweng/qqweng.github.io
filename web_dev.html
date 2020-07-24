@@ -13,7 +13,7 @@
 	<!--Scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <body>
     <!--Navbar-->
@@ -43,9 +43,143 @@
 		</div>
     </nav>
 
-    <!--BANNER-->
-    <div class="banner" style="height: 88%;">
-        <h1>WORKING IN PROGRESS</h1>
+    <!--Banner-->
+	<div class="banner">
+        <h1>Website Development Projects</h1>
+        <p>Lineage-based Data Store (L-Store) is a relational database that combines the real-time 
+            processing of transactional and analytical workloads in a lineage-based storage 
+            architecture. This allows for contention-free and lazy staging of columnar data from a 
+            write-optimized form into a read-optimized form that supports 
+            querying and retaining both current and historic data. For more information about L-Store: 
+            <a href="https://www.researchgate.net/publication/324150481_L-Store_A_Real-time_OLTP_and_OLAP_System">PDF</a> 
+            <a href="https://expolab.org/papers/l-store-slides.pdf">Slides</a></p>
+    </div>
+    
+    <!--Table of Contents-->
+    <div style="background-color: #292929;">
+        <div class="table_of_contents">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#milestone1">Flashcard</a></li>
+                <li><a href="#milestone2">6 Hour Weather</a></li>
+                <li><a href="#milestone3">Museum Exhibit</a></li>
+            </ul>
+        </div>
+	</div>
+	
+	<!--Contributors and Programming Language-->
+    <div class="table_of_contents" style="padding-bottom: 0;">
+        <h2>Contributors</h2>
+		<ul style="padding-bottom: 3%;">
+            <li><a target="_blank" href="https://www.linkedin.com/in/cemma-guo">Jiahua Guo - frontend</a></li>
+			<li><a target="_blank" href="https://github.com/qqweng">Queena Weng - frontend/backend</a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/in/jamie-oka-781a83172">Jamie Oka - website designer</a></li>
+        </ul>
+        <h2>Programming Languages: </h2>
+        <ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+			<li>React</li>
+        </ul>
+	</div>
+	
+	<!--Web Development Projects-->
+    <div style="background-color: #292929;">
+        <div class="projects" style="margin-bottom: 0; padding-top: 2%;">
+
+            <!-- Flashcard with backend-server -->
+            <div class="milestone" id="flashcard">
+                <h2>Flashcard Web Application</h2>
+                <p>The key parts are: </p>
+                <ol>
+                    <li>API Usage (Google Translate)</li>
+                    <li>Database Setup</li>
+					<li>User Interface with React</li>
+					<li>Google Login</li>
+					<li>Multiple Users</li>
+                </ol>
+                <br>
+                <h3>Desktop Designs</h3>
+				<br>
+				<div id="designs" class="carousel slide" data-ride="carousel">
+					<ul class="carousel-indicators">
+						<li data-target="#designs" data-slide-to="0" class="active"></li>
+						<li data-target="#designs" data-slide-to="1"></li>
+						<li data-target="#designs" data-slide-to="2"></li>
+						<li data-target="#designs" data-slide-to="3"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="pictures/flashcard/splash.png">
+							<p>Login Page</p>
+						</div>
+						<div class="carousel-item">
+							<img src="pictures/flashcard/START.png">
+							<p>Create Flashcard Layout</p>
+						</div>
+						<div class="carousel-item">
+							<img src="pictures/flashcard/ANSWER.png">
+							<p>Type Answer in Box Layout</p>
+						</div>
+						<div class="carousel-item">
+							<img src="pictures/flashcard/correctA.png">
+							<p>Correct(green) or Incorrect(red) Answer Box Layout</p>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#designs" data-slide="prev">
+						<span class="carousel-control-prev-icon" ></span>
+					  </a>
+					  <a class="carousel-control-next" href="#designs" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					  </a>
+				</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projects" style="margin-bottom: 0;">
+
+        <!-- 6 Hour Weather within 50 miles of Sacramento, CA -->
+        <div class="milestone" id="weather" style="padding-bottom: 2%;">
+            <h2>6 Hour Weather</h2>
+            <p>The key parts: </p>
+            <ol>
+                <li>OpenWeatherMap Hourly Forecast API</li>
+                <li>Handling JSON information with CORS protocol</li>
+                <li>Doppler Radar Map</li>
+            </ol>
+			<br>
+			<h3>Desktop/Tablet/Mobile Design</h3>
+			<br>
+			<div id="design2" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#design2" data-slide-to="0" class="active"></li>
+					<li data-target="#design2" data-slide-to="1"></li>
+					<li data-target="#design2" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="pictures/weather/web-ver1.jpg">
+						<p>Desktop Version</p>
+					</div>
+					<div class="carousel-item">
+						<img src="pictures/weather/tablet1.jpg">
+						<p>Tablet Version</p>
+					</div>
+					<div class="carousel-item">
+						<img src="pictures/weather/mobile-combined.jpg">
+						<p>Mobile Version</p>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#design2" data-slide="prev">
+					<span class="carousel-control-prev-icon" ></span>
+					</a>
+					<a class="carousel-control-next" href="#design2" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+					</a>
+			</div>
+        </div>
     </div>
 
     <!--FOOTER-->
