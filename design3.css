@@ -75,6 +75,7 @@ body, html {
 }
 
 .info {
+	float: right;
 	width: 80%;
 	height: 90%;
 	background-color: #4d4d4d;
@@ -106,6 +107,7 @@ body, html {
 }
 
 .more_info {
+	float: right;
 	margin-top: 20px;
 	margin-left: 10%;
 	width: auto;
@@ -152,6 +154,12 @@ body, html {
 .projects h1 {
 	color: aliceblue;
 	padding-bottom: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.projects h4 {
+	padding-left: 10px;
+	color: aliceblue;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
